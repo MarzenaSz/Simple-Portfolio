@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-wdth, initial-scale=1">
     <title>Simple Portfolio</title>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,18 +28,18 @@
             <hr>
             <div class="row">
                 <div class="col-md-9">
-                    <img src="http://via.placeholder.com/850x300" class="img-responsive">
+                    <img src="http://via.placeholder.com/850x300" class="img-responsive" data-toggle="modal" data-target="#firstImageModal">
                 </div>
-                <div class="col-md-3">
-                    <p class="text-center text-overflow">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt.Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <div class="col-md-3 text-center text-block">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-9">
-                    <img src="http://via.placeholder.com/850x300" class="img-responsive">
+                    <img src="http://via.placeholder.com/850x300" class="img-responsive" data-toggle="modal" data-target="#secondImageModal">
                 </div>
-                <div class="col-md-3">
-                    <p class="text-center text-overflow">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Pemporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. </p>
+                <div class="col-md-3 text-center text-block">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa. </p>
                 </div>
             </div>
             <div class="row">
@@ -52,15 +54,53 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h2>Contact Info:</h2>
+                <h2 style="padding: 15px 0;">Contact Info:</h2>
             </div>
-            <div class="col-md-6">
-                <p>made up telefon number</p>
-                <p>this email@is legit</p>
+            <div class="col-md-6 text-small">
+                <p>+44 0 772 278 097</p>
+                <p>email_is@legit</p>
                 <p><a href="#">linkedin cause I am profesional</a></p>
-                <p><a href="#">github link because I am developer</a></p>
+                <p><a href="#">github link cause I am developer</a></p>
             </div>
         </div>
     </div>
+
+    <!-- Modal for the first image -->
+<div class="modal fade" id="firstImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="firstImageModal">FIRST PROJECT</h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="http://via.placeholder.com/850x300" class="img-responsive">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for the second image -->
+<div class="modal fade" id="secondImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="secondImageModal">SECOND PROJECT</h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="http://via.placeholder.com/850x300" class="img-responsive">
+        <p>Rero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -29,8 +29,17 @@ body {
     margin-top: 25px;
 }
 
+.text-block {
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
 .gray-background {
     background-color: #EDEDED;
+}
+
+.text-small {
+    font-size: 65%;
 }
 
 hr {
@@ -49,5 +58,8 @@ h4 {
     letter-spacing: 10px;
 }
 
+a {
+    color: black;
+}
 
 
