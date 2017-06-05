@@ -89,6 +89,10 @@ body {
     font-size: 115%;
 }
 
+.modal-img-space {
+    margin-bottom: 10px;
+}
+
 hr {
     background-color: #303030;
     margin: 0;
